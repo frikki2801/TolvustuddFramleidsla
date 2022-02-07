@@ -41,28 +41,55 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="index.html#AboutMe">About me</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Generic Page</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+							<h1>Project 2 - Computer aided cutting</h1>
+							<h2>Part 1 - Vinyl cutter</h2>
+
+							<h2>Part 2 - Laser cutter</h2>
+							
+							<h3>Gathering ideas</h3>
+							<p>Me and Sæmundur desided to work together on projects 2 and 3 since in another class we are creating a soup feeding robot and thought that combining that project with laser cutting and 3D printing would be perfect. We chose to use Autodesk Fusion 360 as our CAD tool since it was recommended by the teacher, has relatively simple control over kerf (will be explained later) and has built in support for easy collaborations between users.</p>
+							<p>I got the task of creating the arms of the robot that will provide strength and keep all the wires in the right places.</p>
+							
+							<h3>Measuring kerf</h3>
+							<p><a href = https://saemi10.github.io/TolvustuddFramleidsla/V2.html#kerf>Here</a></p>
+							
+							<h3>Creating test fits</h3>
+							<p>The arms will be made out of rectangular tubes, taller than they are wide to increase strength, with built in cross bracing and wiring holes at the end of the top piece. Sounds a bit complicated but will be very simple when you look at the finished product.</p>
+							<p>To test the fit I created a short piece of the tube seen here.</p>
+							<span class="image main"><img src="images/Verk2/Test assembly.jpg" alt=""  /></span>
+							<p>This tube uses 3 types of joints, finger joints for the corners, a press fit to connect the 2 braces and snap fits to connect the braces to the 4 sides</p>
+							<p>Below you can see the drawing for the top piece as well as the vertical column. These are both drawn only using named parameters and derivatives there of using rectangular paterns for thi finger joints and mirror symmetry wherever possible. The sides and horizontal column are the exact same expept they switch lenght and width.</p>
+							<div class="box alt">
+								<div class="row gtr-uniform">
+									<div class="col-6"><span class="image fit"><img src="images/Verk2/Test side.jpg" alt="" /></span></div>
+									<div class="col-6"><span class="image fit"><img src="images/Verk2/Test brace.jpg" alt="" /></span></div>
+									<div class="col-12"><span class="image fit"><img src="images/Verk2/test pieces.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<p>Below you can see all of the parameters that I used.</p>
+							<span class="image main"><img src="images/Verk2/test parameters.jpg" alt=""  /></span>
+							<p>To account for kerf I followed <a href = https://www.youtube.com/watch?v=dKBxSx3Tv1k> this video</a> to learn how to account for kerf which gave me the following path that I exported as a pdf using the AutoCAD DXF Post library for Fusion found by searching dxf <a href = https://cam.autodesk.com/hsmposts> here </a>.</p>
+							<span class="image main"><img src="images/Verk2/Test path fusion.jpg" alt=""  /></span>
+							<p>Now that I had the dxf file it was time to import it into inkscape, make copies of the top and side pieces, position them relative to each other. Then I selected all of the pieces, selected Object -> Fill and stroke and input the following settings, fill = none, stroke paint = flat color and stroke style thickness = 0.02 mm. I then saved the file to an usb drive to move it to the laser cutter.</p>
+							<span class="image main"><img src="images/Verk2/test inkscape.jpg" alt=""  /></span>
+							<p></p>
+							
+							<h3>Design</h3>
+							<p></p>
+							</div>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
+							<!-- <section>
 								<h2>Get in touch</h2>
 								<form method="post" action="#">
 									<div class="fields">
@@ -80,18 +107,18 @@
 										<li><input type="submit" value="Send" class="primary" /></li>
 									</ul>
 								</form>
-							</section>
+							</section> -->
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+<!-- 									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+ -->									<li><a href="https://github.com/frikki2801/TolvustuddFramleidsla" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+<!-- 									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
 									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+ -->									<li><a href="mailto:fve1@hi.is" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
