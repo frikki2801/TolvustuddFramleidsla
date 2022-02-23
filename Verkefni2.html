@@ -5,173 +5,226 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Friðrik Valur</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/logo.svg">
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Friðrik Valur</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="icon" href="images/logo.svg">
+</head>
 
-							<!-- Logo -->
-							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Friðrik Valur</span>
-							</a>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-						</div>
-					</header>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Friðrik
+						Valur</span>
+				</a>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html#AboutMe">About me</a></li>
-						</ul>
-					</nav>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Project 2 - Computer aided cutting</h1>
-							<h2>Part 1 - Vinyl cutter</h2>
+			</div>
+		</header>
 
-							<h2>Part 2 - Laser cutter</h2>
-							
-							<h3>Gathering ideas</h3>
-							<p>Me and Sæmundur desided to work together on projects 2 and 3 since in another class we are creating a soup feeding robot and thought that combining that project with laser cutting and 3D printing would be perfect. We chose to use Autodesk Fusion 360 as our CAD tool since it was recommended by the teacher, has relatively simple control over kerf (will be explained later) and has built in support for easy collaborations between users.</p>
-							<p>I got the task of creating the arms of the robot that will provide strength and keep all the wires in the right places.</p>
-							<p>Worktime 2 hours</p>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#AboutMe">About me</a></li>
+			</ul>
+		</nav>
 
-							<h3>Measuring kerf</h3>
-							<p>Kerf is a measurement for the amount of material removed by the laser, to ensure a tight fit you must extend all edges half of that amount which can prove a bit tricky but thankfully fusion has built in tools to take care of it.</p>
-							<p><a href = https://saemi10.github.io/TolvustuddFramleidsla/V2.html#kerf>Here </a>you can see Sæmundurs documentation of the whole process of measuring the kerf for the laser cutter at the HÍ FabLab but I will include the results. The following settings were used giving a kerf of 0.133 mm for the acrylic and 0.167 mm for the plywood.  </p>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Material</th>
-											<th>Parameter</th>
-											<th>Value</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Plywood</td>
-											<td>Preset</td>
-											<td>Wood cutting 6 mm</td>
-										</tr>
-										<tr>
-											<td>Plywood</td>
-											<td>Speed</td>
-											<td>20%</td>
-										</tr>
-										<tr>
-											<td>Plywood</td>
-											<td>Thickness</td>
-											<td>4 mm</td>
-										</tr>
-										<tr>
-											<td>Acrylic plastic</td>
-											<td>Preset</td>
-											<td>Acryl 3 mm</td>
-										</tr>
-										<tr>
-											<td>Acrylic plastic</td>
-											<td>Speed</td>
-											<td>30%</td>
-										</tr>
-										<tr>
-											<td>Acrylic plastic</td>
-											<td> Thickness</td>
-											<td>3 mm</td>
-										</tr>
-										<tr>
-											<td>Both</td>
-											<td>Autofocus</td>
-											<td>Thickness</td>
-										</tr>
-										<tr>
-											<td>Both</td>
-											<td>Air outlet</td>
-											<td>ON</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<p>Worktime 1 hour</p>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>Project 2 - Computer aided cutting</h1>
+				<h2>Part 1 - Vinyl cutter</h2>
 
-							<h3>Creating test fits</h3>
-							<p>The arms will be made out of rectangular tubes, taller than they are wide to increase strength, with built in cross bracing and wiring holes at the end of the top piece. Sounds a bit complicated but will be very simple when you look at the finished product.</p>
-							<p>To test the fit I created a short piece of the tube seen here.</p>
-							<span class="image main"><img src="images/Verk2/Test assembly.jpg" alt=""  /></span>
-							<p>This tube uses 3 types of joints, finger joints for the corners, a press fit to connect the 2 braces and snap fits to connect the braces to the 4 sides</p>
-							<p>Below you can see the drawing for the top piece as well as the vertical column. These are both drawn only using named parameters and derivatives there of using rectangular paterns for thi finger joints and mirror symmetry wherever possible. The sides and horizontal column are the exact same expept they switch lenght and width.</p>
-							<div class="box alt">
-								<div class="row gtr-uniform">
-									<div class="col-6"><span class="image fit"><img src="images/Verk2/Test side.jpg" alt="" /></span></div>
-									<div class="col-6"><span class="image fit"><img src="images/Verk2/Test brace.jpg" alt="" /></span></div>
-									<div class="col-12"><span class="image fit"><img src="images/Verk2/test pieces.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<p>Below you can see all of the parameters that I used.</p>
-							<span class="image main"><img src="images/Verk2/test parameters.jpg" alt=""  /></span>
-							<p>To account for kerf I followed <a href = https://www.youtube.com/watch?v=dKBxSx3Tv1k> this video</a> to learn how to account for kerf which gave me the following path that I exported as a pdf using the AutoCAD DXF Post library for Fusion found by searching dxf <a href = https://cam.autodesk.com/hsmposts> here </a>.</p>
-							<span class="image main"><img src="images/Verk2/Test path fusion.jpg" alt=""  /></span>
-							<p>Now that I had the dxf file it was time to import it into inkscape, make copies of the top and side pieces, position them relative to each other. Then I selected all of the pieces, selected Object -> Fill and stroke and input the following settings, fill = none, stroke paint = flat color and stroke style thickness = 0.02 mm. I then saved the file to an usb drive to move it to the laser cutter.</p>
-							<span class="image main"><img src="images/Verk2/test inkscape.jpg" alt=""  /></span>
-							<p>After testing I noticed that a few things were wrong, I had accidentally set the kerf to 0.0133 mm and not 0.133 mm, the snap fits were to thin at 1 mm then to thick at 2 mm but 1.5 mm finally worked. The holes that the snap fit fingers fit into were originally the exact size of the fingers which was too tight, adding 0.6 mm to the lenght and 0.2 mm to the width fixed that. Finally the pressfits between the two columns was to loose at thickness + kerf and to tight at thickness + 0.06 mm so I settled on thickness + 0.1 mm</p>
-							<p>I had done test withboth black and clear acrylic and the resaults weren't consistant so I decided to cut the materials, turns out that the black one that I will be using for the final product is 3.15 mm thick not 3 mm like it was supposed to be, that explains many of my problems but thankfully everything works now and here is the final succesfull test fit. I definetly should have measure everything earlier in the process, saving me many hours of testing.</p>
-							<div class="box alt">
-								<div class="row gtr-uniform">
-									<div class="col-6"><span class="image fit"><img src="images/Verk2/IMG_20220214_172324.jpg" alt="" /></span></div>
-									<div class="col-6"><span class="image fit"><img src="images/Verk2/IMG_20220214_172348.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<p>Worktime 12 hours</p>
+				<h2>Part 2 - Laser cutter</h2>
 
-							<h3>Final design</h3>
-							<p>The final design was much the same as the test but with a few changes. The length was changed to 220 mm, another set of columns was added and hooks were added to the top side so that rubber bands could assit the motors in the joints if needed. Thanks to heavy use of parameters the length of all 4 sides could be changed to any multiple of 20 by changing just one number.</p>
-							<div class="box alt">
-								<div class="row gtr-uniform">
-									<div class="col-6"><span class="image fit"><img src="images/Verk2/Arm Flat.jpg" alt="" /></span></div>
-									<div class="col-12"><span class="image fit"><img src="images/Verk2/arm 300mm with hooks.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<p>Finally this is how one of the 2 finished pieces came out, pre cleaning though. You can see that the ends are sanded down, that is because the material was 3.15 mm thick and not 3 mm but I forgot to change it in fusion and so to get the arms to  fit into the 3D printed inserts I needed to sandthe first 10 mm from the ends down about 0.15mm, thankfully I had a dremel to make it easier. </p>
-							<div class="box alt">
-								<div class="row gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/Verk2/Armar2.jpg" alt="" /></span></div>
-									<div class="col-12"><span class="image fit"><img src="images/Verk2/Armur samsettur.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<p></p>
-							<p>Worktime 4 hours</p>
+				<h3>Gathering ideas</h3>
+				<p>Me and Sæmundur desided to work together on projects 2 and 3 since in another class we are creating a
+					soup feeding robot and thought that combining that project with laser cutting and 3D printing would
+					be perfect. We chose to use Autodesk Fusion 360 as our CAD tool since it was recommended by the
+					teacher, has relatively simple control over kerf (will be explained later) and has built in support
+					for easy collaborations between users.</p>
+				<p>I got the task of creating the arms of the robot that will provide strength and keep all the wires in
+					the right places.</p>
+				<p>Worktime 2 hours</p>
 
-							<h3>Assambling the arm</h3>
-							<p></p>
-							</div>
+				<h3>Measuring kerf</h3>
+				<p>Kerf is a measurement for the amount of material removed by the laser, to ensure a tight fit you must
+					extend all edges half of that amount which can prove a bit tricky but thankfully fusion has built in
+					tools to take care of it.</p>
+				<p><a href=https://saemi10.github.io/TolvustuddFramleidsla/V2.html#kerf>Here </a>you can see Sæmundurs
+					documentation of the whole process of measuring the kerf for the laser cutter at the HÍ FabLab but I
+					will include the results. The following settings were used giving a kerf of 0.133 mm for the acrylic
+					and 0.167 mm for the plywood. </p>
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th>Material</th>
+								<th>Parameter</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Plywood</td>
+								<td>Preset</td>
+								<td>Wood cutting 6 mm</td>
+							</tr>
+							<tr>
+								<td>Plywood</td>
+								<td>Speed</td>
+								<td>20%</td>
+							</tr>
+							<tr>
+								<td>Plywood</td>
+								<td>Thickness</td>
+								<td>4 mm</td>
+							</tr>
+							<tr>
+								<td>Acrylic plastic</td>
+								<td>Preset</td>
+								<td>Acryl 3 mm</td>
+							</tr>
+							<tr>
+								<td>Acrylic plastic</td>
+								<td>Speed</td>
+								<td>30%</td>
+							</tr>
+							<tr>
+								<td>Acrylic plastic</td>
+								<td> Thickness</td>
+								<td>3 mm</td>
+							</tr>
+							<tr>
+								<td>Both</td>
+								<td>Autofocus</td>
+								<td>Thickness</td>
+							</tr>
+							<tr>
+								<td>Both</td>
+								<td>Air outlet</td>
+								<td>ON</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>Worktime 1 hour</p>
+
+				<h3>Creating test fits</h3>
+				<p>The arms will be made out of rectangular tubes, taller than they are wide to increase strength, with
+					built in cross bracing and wiring holes at the end of the top piece. Sounds a bit complicated but
+					will be very simple when you look at the finished product.</p>
+				<p>To test the fit I created a short piece of the tube seen here.</p>
+				<span class="image main"><img src="images/Verk2/Test assembly.jpg" alt="" /></span>
+				<p>This tube uses 3 types of joints, finger joints for the corners, a press fit to connect the 2 braces
+					and snap fits to connect the braces to the 4 sides</p>
+				<p>Below you can see the drawing for the top piece as well as the vertical column. These are both drawn
+					only using named parameters and derivatives there of using rectangular paterns for thi finger joints
+					and mirror symmetry wherever possible. The sides and horizontal column are the exact same expept
+					they switch lenght and width.</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/Verk2/Test side.jpg"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/Verk2/Test brace.jpg"
+									alt="" /></span></div>
+						<div class="col-12"><span class="image fit"><img src="images/Verk2/test pieces.jpg"
+									alt="" /></span></div>
 					</div>
+				</div>
+				<p>Below you can see all of the parameters that I used.</p>
+				<span class="image main"><img src="images/Verk2/test parameters.jpg" alt="" /></span>
+				<p>To account for kerf I followed <a href=https://www.youtube.com/watch?v=dKBxSx3Tv1k> this video</a> to
+					learn how to account for kerf which gave me the following path that I exported as a pdf using the
+					AutoCAD DXF Post library for Fusion found by searching dxf <a
+						href=https://cam.autodesk.com/hsmposts> here </a>.</p>
+				<span class="image main"><img src="images/Verk2/Test path fusion.jpg" alt="" /></span>
+				<p>Now that I had the dxf file it was time to import it into inkscape, make copies of the top and side
+					pieces, position them relative to each other. Then I selected all of the pieces, selected Object ->
+					Fill and stroke and input the following settings, fill = none, stroke paint = flat color and stroke
+					style thickness = 0.02 mm. I then saved the file to an usb drive to move it to the laser cutter.</p>
+				<span class="image main"><img src="images/Verk2/test inkscape.jpg" alt="" /></span>
+				<p>After testing I noticed that a few things were wrong, I had accidentally set the kerf to 0.0133 mm
+					and not 0.133 mm, the snap fits were to thin at 1 mm then to thick at 2 mm but 1.5 mm finally
+					worked. The holes that the snap fit fingers fit into were originally the exact size of the fingers
+					which was too tight, adding 0.6 mm to the lenght and 0.2 mm to the width fixed that. Finally the
+					pressfits between the two columns was to loose at thickness + kerf and to tight at thickness + 0.06
+					mm so I settled on thickness + 0.1 mm</p>
+				<p>I had done test withboth black and clear acrylic and the resaults weren't consistant so I decided to
+					cut the materials, turns out that the black one that I will be using for the final product is 3.15
+					mm thick not 3 mm like it was supposed to be, that explains many of my problems but thankfully
+					everything works now and here is the final succesfull test fit. I definetly should have measure
+					everything earlier in the process, saving me many hours of testing.</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/Verk2/IMG_20220214_172324.jpg"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/Verk2/IMG_20220214_172348.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>Worktime 12 hours</p>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<!-- <section>
+				<h3>Final design</h3>
+				<p>The final design was much the same as the test but with a few changes. The length was changed to 220
+					mm, another set of columns was added and hooks were added to the top side so that rubber bands could
+					assit the motors in the joints if needed. Thanks to heavy use of parameters the length of all 4
+					sides could be changed to any multiple of 20 by changing just one number.</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/Verk2/Arm Flat.jpg" alt="" /></span>
+						</div>
+						<div class="col-12"><span class="image fit"><img src="images/Verk2/arm 300mm with hooks.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>Finally this is how one of the 2 finished pieces came out, pre cleaning though. You can see that the
+					ends are sanded down, that is because the material was 3.15 mm thick and not 3 mm but I forgot to
+					change it in fusion and so to get the arms to fit into the 3D printed inserts I needed to sandthe
+					first 10 mm from the ends down about 0.15mm, thankfully I had a dremel to make it easier. </p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="images/Verk2/Armar2.jpg" alt="" /></span>
+						</div>
+						<div class="col-12"><span class="image fit"><img src="images/Verk2/Armur samsettur.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p></p>
+				<p>Worktime 4 hours</p>
+
+				<h3>Assambling the arm</h3>
+				<p></p>
+				<p>Worktime 4 hours</p>
+				<p>Total worktime 21 hours</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<!-- <section>
 								<h2>Get in touch</h2>
 								<form method="post" action="#">
 									<div class="fields">
@@ -190,33 +243,39 @@
 									</ul>
 								</form>
 							</section> -->
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-<!-- 									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<!-- 									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
- -->									<li><a href="https://github.com/frikki2801/TolvustuddFramleidsla" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-<!-- 									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+ -->
+						<li><a href="https://github.com/frikki2801/TolvustuddFramleidsla"
+								class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+						<!-- 									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
 									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
- -->									<li><a href="mailto:fve1@hi.is" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
+ -->
+						<li><a href="mailto:fve1@hi.is" class="icon solid style2 fa-envelope"><span
+									class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
 			</div>
+		</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
