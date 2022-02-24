@@ -16,6 +16,12 @@
 	</noscript>
 	<link rel="icon" href="images/logo.svg">
 </head>
+<style>
+	video {
+		max-width: 100%;
+		height: auto;
+	}
+</style>
 
 <body class="is-preload">
 	<!-- Wrapper -->
@@ -46,10 +52,7 @@
 			<h2>Menu</h2>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html">Ipsum veroeros</a></li>
-				<li><a href="generic.html">Tempus etiam</a></li>
-				<li><a href="generic.html">Consequat dolor</a></li>
-				<li><a href="elements.html">Elements</a></li>
+				<li><a href="index.html#AboutMe">About me</a></li>
 			</ul>
 		</nav>
 
@@ -63,13 +66,12 @@
 				<h2>Part 2 - 3D printing</h2>
 				<h3>Gathering ideas</h3>
 				<p>Again me and Sæmundur desided to work together on projects 2 and 3 since in another class we are
-					creating a
-					soup feeding robot and thought that combining that project with laser cutting and 3D printing would
+					creating a soup feeding robot and thought that combining that project with laser cutting and 3D printing would
 					be perfect. We chose to use Autodesk Fusion 360 as our CAD tool since it was recommended by the
 					teacher, has relatively simple control over kerf (will be explained later) and has built in support
 					for easy collaborations between users.</p>
 				<p>For the 3D printing I got the task of making the elbow joint and the wrist joint, he made the
-					shoulder joint and a fan housing.</p>
+					shoulder joint and a fan housing.<a href="https://howtomechatronics.com/tutorials/arduino/diy-arduino-robot-arm-with-smartphone-control/"> Here </a> was one of my main inspirations for this project though the two projects are excecuted in very different ways.</p> 
 				<p>Worktime 1 hours</p>
 
 				<h3>Testing the printer</h3>
@@ -83,78 +85,190 @@
 					but not the ones that matter and so I began by measuring and drawing it up in Fusion.</p>
 				<div class="box alt">
 					<div class="row gtr-uniform">
-						<div class="col-4"><span class="image fit"><img src="images/Verk2/Large servo.jpg"
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Large servo.jpg"
 									alt="" /></span></div>
 					</div>
-					<p>Then I began by making the part of the joints that fits over the ends of the arms since it is
-						shared with all 4 inserts on the robot, I gave it the thickness of 3 mm and made it go 10mm up
-						the arm. THis is visible on the left most image below. Then I went on to design the insert in image 2 </p>
-					<div class="box alt">
-						<div class="row gtr-uniform">
+				</div>
+				<p>
+					Then I began by making the part of the joints that fits over the ends of the arms since it is
+					shared with all 4 inserts on the robot, I gave it the thickness of 3 mm and made it go 10mm up
+					the arm. This is visible on the left most image below. Then I went on to design the insert in
+					image 2. These two were designed to keep the two arms in line and to provide &gt180° of
+					movement.
+				</p>
+				<p>
+					All 4 of the 3D printed parts I drew were made with heavy use of scetching, extruding that and then
+					repeting on the newly created face.
+				</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Elbow up1.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Elbow down.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Elbow up2.jpg"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/Verk3/Elbow assembly.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>After designing this joint it was time to print it, we have access to a prusa printer so I began
+					by exporting a 3mf file from fusion and importing that into <a
+						href="https://www.prusa3d.com/page/prusaslicer_424/"> PrusaSlicer </a> Setting infill to 50%
+					since these parts need to be strong and painting on supports under the overhangs. I forgot the
+					supports at first but thankfully i realised that only 10 minutes in to the print so it was allright.
+					I used orange prusa PLA for all of my prints,
+				</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="images/Verk3/Prusaslicer elbow.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>Sæmi had started his print an hour earlier than me and also forgot supports but that gave us this
+					pretty reject.</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/print failed.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>So we added the supports and started the print again, this time it worked perfectly and so six hours
+					later we had these 2 pretty pieces</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/printing1.1.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/printing1.2.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/printing1.3.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/printing1.4.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/printing1.5.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/finished elbow 1.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/finished elbow 2.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/finished elbow 3.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Elbow assembled.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/elbow lower on arm.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Elbow upper on arm.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>
+					After printing I realised that although the Elbow did indeed have about 200° of movement they were
+					in the wrong place And I actually needed to offset the lower elbow joint 90°, the one with the big
+					hole in the middle seen in the second to last photo above. This reqiered some "adjusments" to the
+					insert but eventually it fit though it was now fastened with bolts through two new holes in it and
+					the arm. But the upper elbow joint press fit perfectly... after alot of sanding down of the arm
+					since the acrylic was 3.15 mm thick but not 3 mm like I thought it was.
+				</p>
 
-							<div class="col-4"><span class="image fit"><img src="images/Verk2/Elbow up1.jpg"
-										alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/Verk2/Elbow down.jpg"
-										alt="" /></span></div>
-							<div class="col-4"><span class="image fit"><img src="images/Verk2/Elbow up2.jpg"
-										alt="" /></span></div>
-
-							<div class="col-6"><span class="image fit"><img src="images/Verk2/Elbow assembly.jpg"
-										alt="" /></span></div>
-
+				<h3>The wrist joint</h3>
+				<p>The wrist joint fastens together a spoon and the upper arm with a small sg90 servo in the middle.
+					Again I began by measuring and drawing the servo in fusion before building the joint around it.
+				</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/Small servo.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>
+					This joint was alot simpler to design
+				</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/uln 1.jpg" alt="" /></span>
 						</div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/uln 2.jpg" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/uln 3.jpg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+				<p>
+					Here jou can see how I sliced it, again with 50% infill and painted on supports for overhangs.
+				</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="images/Verk3/Prusaslicer wrist.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>This one came out perfect on first try as you can see</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/printing3.1.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/spoon.jpg" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/spoon2.jpg" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/spoon3.jpg" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/spoon4.jpg" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/Verk3/spoon5.jpg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+				<p>
+					Finally here you can see a video of us testing both the elbow and wrist of the robot
+				</p>
 
-
-
-
-
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit">
+								<video width="1280" height="720" controls>
+									<source src="images/Verk2/Test myndband1.mp4">
+								</video>
+							</span></div>
 					</div>
 				</div>
 
-				<!-- Footer -->
+
 				<footer id="footer">
 					<div class="inner">
-						<section>
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send" class="primary" /></li>
-								</ul>
-							</form>
-						</section>
+						<!-- <section>
+										<h2>Get in touch</h2>
+										<form method="post" action="#">
+											<div class="fields">
+												<div class="field half">
+													<input type="text" name="name" id="name" placeholder="Name" />
+												</div>
+												<div class="field half">
+													<input type="email" name="email" id="email" placeholder="Email" />
+												</div>
+												<div class="field">
+													<textarea name="message" id="message" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Send" class="primary" /></li>
+											</ul>
+										</form>
+									</section> -->
 						<section>
 							<h2>Follow</h2>
 							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span
-											class="label">Twitter</span></a>
-								</li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span
-											class="label">Facebook</span></a>
-								</li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span
-											class="label">Instagram</span></a>
-								</li>
-								<li><a href="#" class="icon brands style2 fa-dribbble"><span
-											class="label">Dribbble</span></a>
-								</li>
-								<li><a href="#" class="icon brands style2 fa-github"><span
-											class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a>
-								</li>
-								<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a>
-								</li>
-								<li><a href="#" class="icon solid style2 fa-envelope"><span
+								<!-- 									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+		 -->
+								<li><a href="https://github.com/frikki2801/TolvustuddFramleidsla"
+										class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<!-- 									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+											<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+		 -->
+								<li><a href="mailto:fve1@hi.is" class="icon solid style2 fa-envelope"><span
 											class="label">Email</span></a></li>
 							</ul>
 						</section>
